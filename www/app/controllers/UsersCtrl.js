@@ -1,5 +1,6 @@
 app.controller('DashCtrl', function($scope, $http,$ionicModal, $ionicPopup, $stateParams,$ionicPopover) {
     var ndate = $stateParams.ndate;
+    var lang = $stateParams.lang;
     var actualDate=null;
     var dYear=2019;
 
@@ -21,7 +22,7 @@ app.controller('DashCtrl', function($scope, $http,$ionicModal, $ionicPopup, $sta
     };
     //end===========================
 
-    $http.get('sundayschool2019.json').success(function(data){
+    $http.get(lang+'.json').success(function(data){
         $scope.dataSet = data;
         $scope.appDate=actualDate
         $scope.weekNumber=new Date($scope.appDate).getWeekNumber();

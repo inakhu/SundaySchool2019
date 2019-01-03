@@ -89,7 +89,16 @@ angular.module('HezecomApp',[
                 }
             })
             .state('app.dashboard2', {
-                url: '/dashboard/:ndate',
+                url: '/dashboard/filter/:lang/:ndate',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'app/templates/others/dashboard.html',
+                        controller: 'DashCtrl'
+                    }
+                }
+            })
+            .state('app.dashboard3', {
+                url: '/dashboard/lang/:lang',
                 views: {
                     'menuContent': {
                         templateUrl: 'app/templates/others/dashboard.html',

@@ -4,20 +4,60 @@
 	<ion-pane  style="background-color: #d6cac9">
 		<ion-content scroll="true">
 			<section>
-				<div class="row">
-
+				<!--<div class="row">
 					<div class="col text-center ui-gradient-deepblue padding">
 						<span ng-if="weekNumber>1"><button ng-click="previous()" class="button button-calm ion-ios-rewind"></button></span>
 						<button class="button button-light">{{newDate|date:"MMMM dd, yyyy"}}</button>
 						<span ng-if="weekNumber<52"><button ng-click="next()" class="button  button-calm ion-ios-fastforward"> </button></span>
 					</div>
-				</div>
+				</div>-->
 
-				<div class="row">
+				<!--<div class="row">
 					<div class="col text-center card calm-bg">
 						<a href="#/app/dashboard/{{row.appDate| date: 'yyyy-MM-dd'}}" class="item item-icon-left">
 							<i class="icon ion-ios-book dark"></i>
 							<h2><span class="dark">Sunday School Lessons 2019</span></h2>
+							<p><span class="dark" style="font-weight: bold; font-size: 16px;">Start reading</span></p>
+						</a>
+					</div>
+				</div>
+				-->
+
+				<div class="row">
+					<div class="col text-center card calm-bg">
+						<a href="#/app/dashboard/lang/sundayschool2019" class="item item-icon-left">
+							<i class="icon ion-ios-book dark"></i>
+							<h2><span class="dark">English Version</span></h2>
+							<p><span class="dark" style="font-weight: bold; font-size: 16px;">Start reading</span></p>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col text-center card calm-bg">
+						<a href="#/app/dashboard/lang/sundayschoolYoruba2019" class="item item-icon-left">
+							<i class="icon ion-ios-book dark"></i>
+							<h2><span class="dark">Yoruba Version </span></h2>
+							<p><span class="dark" style="font-weight: bold; font-size: 16px;">Start reading</span></p>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col text-center card calm-bg">
+						<a href="#/app/dashboard/lang/sundayschoolHousa2019" class="item item-icon-left">
+							<i class="icon ion-ios-book dark"></i>
+							<h2><span class="dark">Hausa Version</span></h2>
+							<p><span class="dark" style="font-weight: bold; font-size: 16px;">Start reading</span></p>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col text-center card calm-bg">
+						<a href="#/app/dashboard/lang/sundayschoolIgbo2019" class="item item-icon-left">
+							<i class="icon ion-ios-book dark"></i>
+							<h2><span class="dark">Igbo Version</span></h2>
 							<p><span class="dark" style="font-weight: bold; font-size: 16px;">Start reading</span></p>
 						</a>
 					</div>
