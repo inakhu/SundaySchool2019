@@ -25,6 +25,7 @@ app.controller('DashCtrl', function($scope, $http,$ionicModal, $ionicPopup, $sta
     $http.get(lang+'.json').success(function(data){
         $scope.dataSet = data;
         $scope.appDate=actualDate
+        $scope.langInfo=lang
         $scope.weekNumber=new Date($scope.appDate).getWeekNumber();
 
         //console.log('The current ISO week number is ' + $scope.weekNumber);
@@ -56,6 +57,7 @@ app.controller('DashCtrl', function($scope, $http,$ionicModal, $ionicPopup, $sta
                 var len = $scope.dataSet.length;
                 return (((currentIndex + shift) + len) % len)
             }
+
 
         /*$scope.openDetails = function(data){
             var fullArrayLength = $scope.dataSet.length - 1;
